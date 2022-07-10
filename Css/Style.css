@@ -1,0 +1,785 @@
+/*body*/
+.contenedor {
+    background: #88a0b5;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+    /*espacio entre letras*/
+    /*
+    Así hemos definido un margen de 20 píxeles arriba, abajo, a la izquierda y a la derecha del cuerpo de la página. Además un espacio entre líneas de 2 veces el tamaño de la letra configurada por defecto. La fuente tendrá un tamaño un poco menor que la fuente configurada por defecto.
+    */
+    margin: 20px;
+    line-height: 2em;
+    font-size: 1em;
+    
+    /*espacio de las letras de las palabras*/
+    /* letter-spacing: 0.5px; <-----*/
+
+    /*espacio entre palabras*/
+    /* word-spacing: 0.25em;  <-----*/
+
+    /*Mayusculas - Minusculas al texto*/
+    /*text-transform: uppercase;  <-----*/
+    
+    /* Muesrtras
+    color: #2b5ac8;
+    color: #2b7cc8;
+    color: #2ba7c8;
+    color: #2bc8c8;
+    color: #bde5e5;
+    color: #000000;
+    color: #070817;
+    color: #333741;
+    color: #616b73;
+    color: #88a0b5;    
+    */
+}
+
+/*Menu*/
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    color: #616b73;
+}
+
+.menu__header {
+    display: flex;
+    width: 15%;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #000000;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list__item a:link,
+a:visited {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.boton-nav {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border-width: 1px;
+    border-color: #566963;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    text-shadow: inset 0px -1px 0px #616b73;
+    background: linear-gradient(#768d87, #6c7c7c);
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-nav:hover {
+    background: linear-gradient(#6c7c7c, #768d87);
+}
+
+/*Contenedor Titulo Presentación*/
+.title__container{
+    color:cornsilk;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title-contenedor-fondo{
+    display: flex;
+}
+.title-img{
+    display: flex;
+    justify-content: center;
+}
+
+/*Contenedor Presentación*/
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 120px;
+    width: 60%;
+    height: 30rem;
+    order: 2;
+    flex-grow: 0;
+}
+
+/*titulo presentacion*/
+.title__profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*primer parrafo bio*/
+.title__bio {
+    display: flex;
+    font-size: 30px;
+    ;
+}
+
+/*segundo parrafo bio*/
+.title__subsection {
+    font-size: 20px;
+    color: rgb(9, 4, 77);
+}
+
+/*Enlaces a redes sociales y curriculum*/
+.title__network {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+       
+}
+.title__network__item img{
+    box-shadow: 2px 2px 0px 1px #000;
+    border:3px solid #0a0a0b;
+    border-radius: 100%;
+}
+.title__network__item img:hover{
+    box-shadow: 1px 1px 5px 2px rgb(56, 81, 120);
+    border:3px solid rgb(6, 6, 240);
+    border-radius: 100%;
+    transition: 0.8s;
+}
+/*Sobre Mi*/
+.about {
+    background: #616b73;
+}
+
+/*Contenedor sobre mi*/
+.about__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 20px;
+    margin-left: 25px;
+}
+
+/*titulo sobre mi*/
+.about__title {
+    color: #dddbda;
+    font-size: 25px;
+}
+
+/*parrafos sobre mi*/
+.about__paragraph {
+    font-size: 20px;
+    color: #fff;
+}
+
+/*Habilidades - Skill*/
+.skills {
+    display: flex;
+    flex-direction: column;
+    background: #333741;
+    justify-content: space-around;
+}
+
+/*titulo habilidades*/
+.skills__title {
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+}
+
+/*div con las habilidades*/
+.skills__line {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    margin-bottom: 3rem;
+    margin-left: 15%;
+    padding: 20px;
+}
+
+/*cajas de las skill*/
+.skills__box ul {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #dddbda;
+    border-color: #fff;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid rgb(225, 223, 222) ;
+}
+
+.skills__box ul:hover {
+    box-shadow: 3px 3px 10px 5px #079ae4;
+    background: linear-gradient(#616b73, #dddbda);
+    border: 2px solid rgb(4, 35, 188) ;
+    transition: 1s;
+}
+
+/*las imagenes de los skill*/
+.skills__img {
+    display: flex;
+    justify-content: center;
+}
+
+/*titulo del skill*/
+.skills__name {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*Hobbies section*/
+.hobbies {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #333741;
+    justify-content: space-between;
+}
+
+/*titulo de hobbies*/
+.hobbies__title {
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+}
+
+/*div con los hobbies*/
+.hobbies__line {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+/*Caja de los divs*/
+.hobbies__box ul {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #dddbda;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgb(225, 223, 222) ;
+    border-radius: 10px;
+}
+
+.hobbies__box ul:hover {
+    box-shadow: 3px 3px 10px 5px #77cc08;
+    background: linear-gradient(#616b73, #dddbda);
+    border: 2px solid rgb(5, 137, 27) ;
+    transition: 1s;
+}
+
+/*imagenes iconos hobbies*/
+.hobbies__img {
+    display: flex;
+    justify-content: center;
+}
+
+/*nombre del hobbie*/
+.hobbies__name {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*Titulos Academicos*/
+.academic {
+    background: #616b73;
+    display: flex;
+    flex-direction: column;
+    /*background: #333741;*/
+    justify-content: space-between;
+}
+
+/*titulo de "formacion academica"*/
+.academic__title {
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+}
+
+/*contenedor facultades*/
+.academic__courses {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+/*Caja del curso*/
+.academic__courses__box ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #dddbda;
+    
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(60deg, #3c3ff4, #6568ef,#9192ec, #b7b8eb,#cacaeb, #bfc0e9, #9192ec, #6568ef,#3c3ff4);
+    border: 2px solid rgb(225, 223, 222) ;
+}
+/*Captador de atencion*/
+.academic__courses__box ul:hover{    
+    background: linear-gradient(60deg, #e5e7e8, #bed3df, #7daedf, #5cb2d9, #3fa5d7,  #5cb2d9,   #7daedf,  #bed3df,#e5e7e8); 
+    border: 2px solid rgb(42, 41, 41) ;
+    transition: 1s; 
+}
+
+/*la imagen del curso academico*/
+.academic__courses__item__img {
+    display: flex;
+    justify-content: center;
+}
+
+/*el titulo del curso*/
+.academic__courses__item__title {
+    display: flex;
+    justify-content: center;
+}
+
+/*el subtitulo del curso*/
+.academic__courses__item__subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+/*experiencia profesional*/
+.experience {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 2;
+    background: #333741;
+}
+
+.experience__section__title__container {
+    display: flex;
+    width: 100%;
+    background: #333741;
+    justify-content: space-between;
+}
+
+/*titulo experiencia profesional*/
+.experience__section__title {
+    display: flex;
+    color: #fff;
+    padding: 20px;
+}
+
+/*contenedor de experiencia*/
+.experiencie__box {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*imagen de la experiencia*/
+.experience__img {
+    display: flex;
+    border: 2px solid rgb(225, 223, 222) ;
+}
+.experience__img:hover {
+    transition: 1s;
+    border: 2px solid rgb(239, 5, 83) ;
+}
+
+/*info de la experiencia*/
+.experience__info {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.experience__description{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+/*texto descriptivo de la experiencia*/
+.experience__description  {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.experience__repo {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; 
+}
+
+/*boton al repositorio*/
+.experiencia__botao--repo {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border-width: 1px;
+    border-color: #566963;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    text-shadow: inset 0px -1px 0px #616b73;
+    background: linear-gradient(#768d87, #6c7c7c);
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+}
+.experiencia__botao--repo:hover {
+    background: linear-gradient(#6c7c7c, #768d87);
+}
+.experience__demo {
+    
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border-width: 1px;
+    border-color: #566963;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    text-shadow: inset 0px -1px 0px #616b73;
+    background: linear-gradient(#768d87, #6c7c7c);
+    align-items: center;
+    justify-content: center;
+}
+
+/*ver la demo de la experiencia boton*/
+.experience__botao--demo {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border-width: 1px;
+    border-color: #566963;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    text-shadow: inset 0px -1px 0px #616b73;
+    background: linear-gradient(#768d87, #6c7c7c);
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.experience__botao--demo:hover {
+    text-decoration: none;
+    background: linear-gradient(#6c7c7c, #768d87);
+}
+
+/*Formulario*/
+.formcontato {
+    display: flex;
+    margin-top: 3rem;
+    display: flex;
+    background: #616b73;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+/*Formulario box*/
+.formcontato__contacto {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*formulario contacto izquierdo*/
+.formcontato--izquierda {
+    display: flex;
+    justify-content: center;
+}
+
+/*contenedor texto*/
+.formcontato__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*formulario titulo*/
+.formcontato__title {
+    padding: 5px;
+    color: #fff;
+    font-size: 25px;
+}
+
+/*formulario pregunta*/
+.formcontato__subtext {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/*campos formulario*/
+.formcontato__form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/*Input Formulario*/
+.formcontato__input {
+    width: 70%;
+    font-size: 16px;
+}
+
+/*Text Area Contactos*/
+.formcontato__textarea {
+    margin-top: 5px;
+}
+
+/*Boton formulario enviar*/
+.formcontato__boton {
+    margin-top: 5px;
+    width: 20%;
+    align-items: center;
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border-width: 1px;
+    border-color: #566963;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    text-shadow: inset 0px -1px 0px #616b73;
+    background: linear-gradient(#768d87, #6c7c7c);
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.formcontato__boton:hover{
+    text-decoration: none;
+    background: linear-gradient(#6c7c7c, #768d87);
+    
+}
+.small-class {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formcontato__form small{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 1rem;
+    color: red;
+    font-weight: 300;
+    
+}
+.formcontacto__form.error small{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 1rem;
+    color: red;
+    font-weight: 300;
+    visibility: visible;
+}
+.formcontacto__form.sucess small{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 1rem;
+    color: red;
+    font-weight: 300;
+    visibility: visible;
+}
+
+/*Rodapie*/
+.footer {
+    display: flex;
+    width: 100%;
+    background: #88a0b5;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/*footer texto*/
+.footer__rodape p {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+/*Responsive a partir de aqui ---v */
+@media (max-width:728px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu__list{
+        flex-direction: column;
+        align-items: initial;
+    }
+    .menu__header{
+        display: flex;
+        width: 100%;
+        justify-content: none;
+    }
+    .title{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .title__div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0;
+        height: auto;
+    }
+    .title__profile {
+        width: 100%;
+        display: flex;
+    }
+    .title__container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .title__bio{
+        width: 100%;
+        height: auto;
+    }
+    .title__subsection{
+        width: 100%;
+        height: auto;
+    }
+    .title__network {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .about{
+        display: flex;
+    }
+    .about__container{
+        width: 100%;
+    }
+   
+    .skills__line{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin: 0;
+        align-items: center;
+        flex-wrap: wrap;
+
+        
+    }
+    .hobbies__line{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin: 0;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .academic__courses{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin: 0;
+    }
+    .academic__courses__list{
+        flex-wrap: wrap;
+    }
+    .academic__courses__item__img{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .experience{
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+        flex-wrap: initial;
+    }
+    .experiencie__box{
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .experience__img{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .experience__info{
+        display: flex;
+        width: 100%;
+        
+    }
+    .experience__description{
+        display: flex;
+        width: 100%;
+    }
+    .formcontato__img{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .formcontato__form{
+        width: auto;
+        margin: auto;
+
+    }
+    .footer__rodape p{
+        padding: 10%
+    }
+}
